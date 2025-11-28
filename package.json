@@ -1,0 +1,19 @@
+{
+  "name": "bedrock-afk-bot",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "scripts": {
+    "build": "pkg . --targets node18-linux-x64 --output bedrock-bot"
+  },
+  "dependencies": {
+    "bedrock-protocol": "^3.28.0"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  },
+  "pkg": {
+    "assets": [
+      "profiles/**/*"
+    ]
+  }
+}
