@@ -4,6 +4,7 @@
   "main": "bot.js",
   "scripts": {
     "build": "pkg . --targets node18-linux-x64 --output bedrock-bot"
+    "start": "node server.js"
   },
   "dependencies": {
     "bedrock-protocol": "^3.28.0"
@@ -16,4 +17,5 @@
       "profiles/**/*"
     ]
   }
+
 }
