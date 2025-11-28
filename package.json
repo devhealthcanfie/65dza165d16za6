@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "bot.js",
   "scripts": {
-    "build": "pkg . --targets node18-linux-x64 --output bedrock-bot"
+    "build": "pkg . --targets node18-linux-x64 --output bedrock-bot",
     "start": "node server.js"
   },
   "dependencies": {
@@ -19,3 +19,4 @@
   }
 
 }
+
