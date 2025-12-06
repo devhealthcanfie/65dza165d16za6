@@ -7,10 +7,10 @@ cpu_kind = "shared"
 cpus = 1
 memory = "2gb"
 
-# Your bot process
+# Your bot process - ONLY ONE!
 [processes]
 app = "npm start"
 
-# OPTIONAL: If you want to ensure it never scales to zero
-[compute]
-memory = "2GB"
+# ADD THIS to prevent multiple machines:
+[deploy]
+max_per_region = 1  # Maximum 1 machine per region
