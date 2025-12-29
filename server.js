@@ -8,6 +8,12 @@ const server = http.createServer((req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
+
+// Start the HTTP server
+server.listen(PORT, () => {
+  console.log(`✅ Web server running on port ${PORT}`);
+  console.log('🌐 Health checks will now work');
+  
   // Start your bot
   console.log('🎮 Starting Minecraft AFK Bot...');
   require('./bot.js');
