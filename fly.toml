@@ -2,16 +2,13 @@ app = "65dza165d16za6"
 primary_region = "cdg"
 
 [processes]
-app = "npm start"  # or your actual bot command
+app = "npm start"
 
 [vm]
 cpu_kind = "shared"
-cpus = 2
-memory = "4gb"
+cpus = 1
+memory = "2gb"
 
-# Optional: Add swap for memory spikes
-swap_size_mb = 1024
-
-# Keep at least 1 machine always running
-[min_machines_running]
-app = 1
+[deploy]
+release_command = ""
+strategy = "immediate"
