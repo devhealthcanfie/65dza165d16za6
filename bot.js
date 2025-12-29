@@ -53,7 +53,7 @@ class StableBot {
             console.log(`🔗 ${this.account.username} connecting... (attempt ${this.connectionAttempts})`);
             
             this.client = createClient({
-                host: 'donutsmp.net',
+                host: 'west.donutsmp.net',
                 port: 19132,
                 username: this.account.username,
                 profilesFolder: this.account.profilePath,
@@ -313,4 +313,5 @@ process.on('exit', () => {
     bots.forEach(bot => {
         try { bot.stop(); } catch (e) {}
     });
+
 });
